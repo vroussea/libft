@@ -6,7 +6,7 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 14:50:51 by vroussea          #+#    #+#             */
-/*   Updated: 2015/12/23 18:35:35 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/03/18 15:35:16 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,15 @@
 # define LIBFT_H
 
 # include <string.h>
+# define BUFF_SIZE 32
+
+typedef struct		s_file
+{
+	int				fd;
+	char			*str;
+	struct s_file	*next;
+	struct s_file	*prev;
+}					t_file;
 
 typedef struct		s_list
 {
@@ -23,6 +32,14 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+/*
+** swap 2 memory cases
+*/
+void				ft_intswap(void *a, void *b);
+/*
+** read a file line per line
+*/
+int					get_next_line(int const fd, char **line);
 /*
 ** create new link of type t_list
 */
