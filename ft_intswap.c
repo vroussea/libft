@@ -6,17 +6,17 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/18 15:34:56 by vroussea          #+#    #+#             */
-/*   Updated: 2016/03/18 15:34:58 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/03/18 15:41:47 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_intswap(int a, int b)
+void	ft_intswap(int *a, int *b)
 {
 	int	c;
 
-	c = a;
-	a = b;
-	b = c;
+	c = *a;
+	*a = *b;
+	*b = c;
 }

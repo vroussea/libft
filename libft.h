@@ -6,7 +6,7 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 14:50:51 by vroussea          #+#    #+#             */
-/*   Updated: 2016/03/18 15:38:19 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/03/18 15:48:21 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,9 @@ typedef struct		s_list
 }					t_list;
 
 /*
-** swap 2 memory cases
+** swap 2 int
 */
-void				ft_intswap(int a, int b);
+void				ft_intswap(int *a, int *b);
 /*
 ** read a file line per line
 */
