@@ -6,7 +6,7 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 14:50:51 by vroussea          #+#    #+#             */
-/*   Updated: 2016/03/31 22:20:49 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/04/01 15:26:11 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ typedef struct		s_list
 /*
 ** free a void** var
 */
-void				ft_tabdel(void **tab);
+void				ft_tabdel(void ***tab);
 /*
 ** swap 2 int
 */

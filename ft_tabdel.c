@@ -6,18 +6,27 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/31 22:17:44 by vroussea          #+#    #+#             */
-/*   Updated: 2016/03/31 22:19:49 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/04/01 17:24:45 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_tabdel(void **tab)
+void	ft_tabdel(void ***tab)
 {
-	while (*tab != NULL)
+	int 	i;
+	void	**ptr;
+
+	i = 0;
+	if (*tab)
 	{
-		ft_memdel(*tab);
-		tab++;
+		ptr = *tab;
+		while (ptr[i] != NULL)
+		{
+			ft_memdel(&ptr[i]);
+			i++;
+		}
+		ft_memdel(ptr);
+		*tab = NULL;
 	}
-	ft_memdel(tab);
 }
