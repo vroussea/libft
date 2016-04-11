@@ -6,7 +6,7 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 14:50:51 by vroussea          #+#    #+#             */
-/*   Updated: 2016/04/01 15:26:11 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/04/05 18:25:03 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 # define LIBFT_H
 
 # include <string.h>
-# define BUFF_SIZE 32
+# define BUFF_SIZE 50000
 
 typedef struct		s_file
 {
