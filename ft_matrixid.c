@@ -1,32 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tabdel.c                                        :+:      :+:    :+:   */
+/*   ft_matrixid.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/03/31 22:17:44 by vroussea          #+#    #+#             */
-/*   Updated: 2016/04/26 20:24:07 by vroussea         ###   ########.fr       */
+/*   Created: 2016/04/26 20:12:12 by vroussea          #+#    #+#             */
+/*   Updated: 2016/05/02 22:47:57 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_tabdel(void ***tab)
+double	**ft_matrixid(int size)
 {
+	double	**mat;
 	int		i;
-	void	**ptr;
+	int		j;
 
 	i = 0;
-	if (*tab)
+	if (!(mat = (double **)ft_memalloc(sizeof(double *) * (size + 1))))
+		return (NULL);
+	while (i < size)
 	{
-		ptr = *tab;
-		while (ptr[i] != NULL)
-		{
-			ft_memdel(&ptr[i]);
-			i++;
-		}
-		ft_memdel(ptr);
-		*tab = NULL;
+		if (!(mat[i] = (double *)ft_memalloc(sizeof(double) * size)))
+			return (NULL);
+		i++;
 	}
+	mat[i] = NULL;
+	i = 0;
+	while (i < size)
+	{
+		j = 0;
+		while (j++ < size)
+			mat[i][j - 1] = (i == j - 1 ? 1 : 0);
+		i++;
+	}
+	return (mat);
 }

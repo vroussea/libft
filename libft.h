@@ -6,7 +6,7 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 14:50:51 by vroussea          #+#    #+#             */
-/*   Updated: 2016/04/05 18:25:03 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/04/26 20:18:16 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -318,4 +318,8 @@ int					ft_sqrt(int x);
 ** return the absolute value of n in an unsigned int
 */
 unsigned int		ft_abs(int n);
+/*
+** create an identitary double matrix[size][size]
+*/
+double				**ft_matrixid(int size);
 #endif
