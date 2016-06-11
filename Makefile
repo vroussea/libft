@@ -6,12 +6,12 @@
 #    By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/24 09:55:27 by vroussea          #+#    #+#              #
-#    Updated: 2016/04/26 20:17:07 by vroussea         ###   ########.fr        #
+#    Updated: 2016/06/11 15:27:29 by vroussea         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME =		libft.a
-INCLUDESDIR =.
+HEADER =	libft.h
 CC =		gcc
 CFLAGS =	-Wall -Wextra -Werror
 SOURCES =	ft_putchar.c ft_putchar_fd.c ft_putnbr.c ft_putnbr_fd.c ft_putstr.c\
@@ -31,7 +31,7 @@ SOURCES =	ft_putchar.c ft_putchar_fd.c ft_putnbr.c ft_putnbr_fd.c ft_putstr.c\
 OBJS =		$(SOURCES:.c=.o)
 
 all :		$(NAME)
-$(NAME) :	$(OBJS)
+$(NAME) :	$(OBJS) $(HEADER) Makefile
 			ar rc $(NAME) $(OBJS)
 			ranlib $(NAME)
 norm :
