@@ -6,7 +6,7 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 14:50:51 by vroussea          #+#    #+#             */
-/*   Updated: 2016/09/09 16:32:42 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/09/09 16:34:55 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -268,7 +268,7 @@ char				*ft_itoa(int n);
 /*
 ** convert a long in different bases to an alpha num string
 */
-char				*ft_ltoa_base(int n);
+char				*ft_ltoa_base(int n, int base);
 /*
 ** return 1 if c is \t, \n, \r, \v, ' ', 0 else
 */
