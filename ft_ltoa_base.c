@@ -6,7 +6,7 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/09 16:35:18 by vroussea          #+#    #+#             */
-/*   Updated: 2016/09/09 16:35:20 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/09/09 16:37:31 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char	*tab_filler(char *tab, unsigned long val, int base, int size)
 	return (tab);
 }
 
-char	*ft_itoa_base(long value, int base)
+char	*ft_ltoa_base(long value, int base)
 {
 	char			*tab;
 	unsigned long	val;
