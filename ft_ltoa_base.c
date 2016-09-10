@@ -6,10 +6,11 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/09 16:35:18 by vroussea          #+#    #+#             */
-/*   Updated: 2016/09/09 16:37:31 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/09/10 13:48:38 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
 
 int		sizer(unsigned long value, int base)
@@ -35,7 +36,7 @@ char	*tab_filler(char *tab, unsigned long val, int base, int size)
 	{
 		size--;
 		if ((val % base) > 9)
-			tab[size] = 'A' + ((val % base) - 10);
+			tab[size] = 'a' + ((val % base) - 10);
 		else
 			tab[size] = '0' + (val % base);
 		val = val / base;
