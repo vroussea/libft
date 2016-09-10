@@ -6,7 +6,7 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 14:50:51 by vroussea          #+#    #+#             */
-/*   Updated: 2016/09/10 13:46:09 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/09/10 14:36:43 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -140,6 +140,14 @@ void				ft_putnbr_fd(int n, int fd);
 ** call ft_putnbr_fd on fd:1 (file descriptor)
 */
 void				ft_putnbr(int n);
+/*
+** write a long in different base
+*/
+void				ft_putnbr_base_fd(long n, int base, int fd);
+/*
+** call ft_putnbr_fd on fd:1 (file descriptor)
+*/
+void				ft_putnbr_base(long n, int base);
 /*
 ** write a char
 */
