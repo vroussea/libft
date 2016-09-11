@@ -6,10 +6,11 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/09 16:01:42 by vroussea          #+#    #+#             */
-/*   Updated: 2016/09/09 16:03:56 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/09/11 14:46:16 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
 
 int		sizer(unsigned int value, int base)
@@ -62,7 +63,7 @@ char	*ft_itoa_base(int value, int base)
 	else
 		val = value;
 	size = sizer(val, base);
-	if (!(tab = (char *)malloc(size + isneg)))
+	if (!(tab = ft_strnew(size + isneg)))
 		return (NULL);
 	if (isneg == 1)
 		tab[0] = '-';

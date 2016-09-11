@@ -6,7 +6,7 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/09 16:35:18 by vroussea          #+#    #+#             */
-/*   Updated: 2016/09/10 13:48:38 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/09/11 14:44:56 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ char	*ft_ltoa_base(long value, int base)
 	else
 		val = value;
 	size = sizer(val, base);
-	if (!(tab = (char *)malloc(size + isneg)))
+	if (!(tab = ft_strnew(size + isneg)))
 		return (NULL);
 	if (isneg == 1)
 		tab[0] = '-';
