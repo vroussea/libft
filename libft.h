@@ -6,7 +6,7 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 14:50:51 by vroussea          #+#    #+#             */
-/*   Updated: 2016/09/10 14:36:43 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/09/11 16:26:25 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,10 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+/*
+** realloc a string with n new bytes
+*/
+char				*ft_strrealloc(const char *str, size_t n);
 /*
 ** free a void** var
 */

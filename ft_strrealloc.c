@@ -1,19 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_strrealloc.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/24 21:43:16 by vroussea          #+#    #+#             */
-/*   Updated: 2016/09/11 17:28:02 by vroussea         ###   ########.fr       */
+/*   Created: 2016/09/11 16:23:08 by vroussea          #+#    #+#             */
+/*   Updated: 2016/09/11 16:26:10 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "unistd.h"
 
-void	ft_putstr_fd(const char *s, int fd)
+char	*ft_strrealloc(const char *str, size_t n)
 {
-	write(fd, s, ft_strlen(s));
+	int		size;
+	int		i;
+	char	*new;
+
+	size = ft_strlen(str);
+	if (!(new = ft_strnew(size + n)))
+		return (NULL);
+	i = 0;
+	while (i < size)
+	{
+		new[i] = str[i];
+		i++;
+	}
+	return (new);
 }
