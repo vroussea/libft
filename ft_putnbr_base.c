@@ -6,7 +6,7 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/10 13:49:35 by vroussea          #+#    #+#             */
-/*   Updated: 2016/09/10 14:35:42 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/09/14 18:06:36 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_putnbr_base(long n, int base)
 {
-		ft_putnbr_base_fd(n, base, 1);
+	ft_putnbr_base_fd(n, base, 1);
 }

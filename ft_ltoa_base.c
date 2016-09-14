@@ -6,14 +6,14 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/09 16:35:18 by vroussea          #+#    #+#             */
-/*   Updated: 2016/09/11 14:44:56 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/09/14 18:07:02 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-int		sizer(unsigned long value, int base)
+static int	sizer(unsigned long value, int base)
 {
 	int	size;
 
@@ -28,7 +28,7 @@ int		sizer(unsigned long value, int base)
 	return (size);
 }
 
-char	*tab_filler(char *tab, unsigned long val, int base, int size)
+static char	*tab_filler(char *tab, unsigned long val, int base, int size)
 {
 	if (val == 0)
 		tab[size - 1] = '0';
@@ -44,7 +44,7 @@ char	*tab_filler(char *tab, unsigned long val, int base, int size)
 	return (tab);
 }
 
-char	*ft_ltoa_base(long value, int base)
+char		*ft_ltoa_base(long value, int base)
 {
 	char			*tab;
 	unsigned long	val;
