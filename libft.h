@@ -6,7 +6,7 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 14:50:51 by vroussea          #+#    #+#             */
-/*   Updated: 2016/09/14 17:04:34 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/09/20 16:29:15 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,10 @@ void				ft_tabdel(void ***tab);
 ** swap 2 int
 */
 void				ft_intswap(int *a, int *b);
+/*
+** swap 2 double
+*/
+void				ft_swap(double *a, double *b);
 /*
 ** read a file line per line
 */
@@ -335,9 +339,9 @@ int					ft_pow(double x, double y);
 */
 int					ft_sqrt(int x);
 /*
-** return the absolute value of n in an unsigned int
+** return the absolute value of n in a double var
 */
-unsigned int		ft_abs(int n);
+double		ft_abs(double n);
 /*
 ** create an identitary double matrix[size][size]
 */
