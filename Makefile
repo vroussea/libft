@@ -6,7 +6,7 @@
 #    By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/24 09:55:27 by vroussea          #+#    #+#              #
-#    Updated: 2016/09/20 16:29:33 by vroussea         ###   ########.fr        #
+#    Updated: 2016/09/22 22:15:40 by vroussea         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,5 +41,5 @@ norm :
 clean :
 			-rm  $(OBJS)
 fclean :	clean
-			-rm  -f $(OUT) $(NAME)
+			-rm -f $(OUT) $(NAME)
 re :		fclean all
