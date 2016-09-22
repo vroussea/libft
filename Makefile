@@ -6,7 +6,7 @@
 #    By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/24 09:55:27 by vroussea          #+#    #+#              #
-#    Updated: 2016/09/22 22:15:40 by vroussea         ###   ########.fr        #
+#    Updated: 2016/09/22 22:16:54 by vroussea         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,7 @@ $(NAME) :	$(OBJS) $(HEADER) Makefile
 norm :
 			norminette $(SOURCES) libft.h get_next_line.h
 clean :
-			-rm  $(OBJS)
+			-rm $(OBJS)
 fclean :	clean
-			-rm -f $(OUT) $(NAME)
+			-rm -f $(NAME)
 re :		fclean all
