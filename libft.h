@@ -6,7 +6,7 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 14:50:51 by vroussea          #+#    #+#             */
-/*   Updated: 2016/09/20 16:29:15 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/11/10 16:26:10 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,13 @@
 
 # include <string.h>
 # define BUFF_SIZE 50000
+
+typedef struct		s_vectorf3
+{
+	float			x;
+	float			y;
+	float			z;
+}					t_vectorf3;
 
 typedef struct		s_file
 {
@@ -341,7 +348,7 @@ int					ft_sqrt(int x);
 /*
 ** return the absolute value of n in a double var
 */
-double		ft_abs(double n);
+double				ft_abs(double n);
 /*
 ** create an identitary double matrix[size][size]
 */
