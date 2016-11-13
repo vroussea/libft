@@ -6,7 +6,7 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 19:23:26 by vroussea          #+#    #+#             */
-/*   Updated: 2016/11/13 17:10:38 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/11/13 18:00:12 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ static float	fill_float(const char *str, int i)
 		{
 			floatty += (float)((float)(str[i] - '0') / div);
 			div *= 10;
+			i++;
 		}
 	}
 	return ((float)(val + floatty));
