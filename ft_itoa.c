@@ -6,7 +6,7 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 15:02:34 by vroussea          #+#    #+#             */
-/*   Updated: 2016/11/16 15:55:06 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/11/16 16:04:17 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,6 @@ char			*ft_itoa(int n)
 	size = ft_sizestr(value);
 	if (!(str = ft_strnew(size + if_neg)))
 		return (NULL);
-	str[size + if_neg] = '\0';
 	ft_itod(str, value, (size + if_neg));
 	if (if_neg)
 		str[0] = '-';
