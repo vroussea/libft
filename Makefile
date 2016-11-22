@@ -6,7 +6,7 @@
 #    By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/24 09:55:27 by vroussea          #+#    #+#              #
-#    Updated: 2016/11/21 14:59:46 by vroussea         ###   ########.fr        #
+#    Updated: 2016/11/22 10:42:49 by vroussea         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,7 +76,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 		@mkdir -p $(OBJ_DIR) 2> /dev/null || true
 		@$(CC) $(CFLAGS) $(INC) -o $@ -c $<
 norme :
-		@norminette $(SRC) $(INC)
+		@norminette $(SRC) includes/libft.h
 meteo :
 		@curl http://wttr.in/Paris
 clean :
