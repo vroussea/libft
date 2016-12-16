@@ -6,7 +6,7 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 14:50:51 by vroussea          #+#    #+#             */
-/*   Updated: 2016/11/22 11:07:08 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/12/16 15:45:57 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -291,6 +291,10 @@ int					ft_atoi(const char *str);
 ** convert an alpha num string to a float
 */
 float				ft_atof(const char *str);
+/*
+** convert an alpha num string to a double
+*/
+double				ft_atod(const char *str);
 /*
 ** convert an int in different bases to an alpha num string
 */
