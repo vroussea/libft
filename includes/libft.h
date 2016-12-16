@@ -6,7 +6,7 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 14:50:51 by vroussea          #+#    #+#             */
-/*   Updated: 2016/12/16 15:45:57 by vroussea         ###   ########.fr       */
+/*   Updated: 2016/12/16 15:50:02 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@
 # include <string.h>
 # define BUFF_SIZE 50000
 
-typedef struct		s_vectorf3
+typedef struct		s_vector3d
 {
-	float			x;
-	float			y;
-	float			z;
-}					t_vectorf3;
+	double			x;
+	double			y;
+	double			z;
+}					t_vector3d;
 
 typedef struct		s_pt
 {
