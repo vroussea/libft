@@ -6,7 +6,7 @@
 /*   By: vroussea <vroussea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 14:50:51 by vroussea          #+#    #+#             */
-/*   Updated: 2016/12/16 15:50:02 by vroussea         ###   ########.fr       */
+/*   Updated: 2017/01/11 18:32:05 by vroussea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -355,7 +355,7 @@ char				*ft_strjoin(char const *s1, char const *s2);
 /*
 ** return x pow y
 */
-int					ft_pow(double x, double y);
+double				ft_pow(double x, double y);
 /*
 ** return the squarre root of x
 */
